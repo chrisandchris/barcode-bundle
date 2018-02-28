@@ -15,13 +15,13 @@ Features:
 
 Add SGKBarcodeBundle by running the command:
 ```sh
-$ php composer.phar require sgk/barcode-bundle:v1.1.0
+$ php composer.phar require sgk/barcode-bundle:v2.0.0
 ```
 
 Or, add SGKBarcodeBundle to your ``composer.json``, then execute ``php composer.phar update``
 ```json
 "require": {
-        "sgk/barcode-bundle": "v1.1.0"
+        "sgk/barcode-bundle": "v2.0.0"
     }
 ```
 
@@ -238,7 +238,7 @@ If there is some problem of requirements, make sure you have install these two e
 
 ## Tests
 
-To execute unit tests, in a test project run:
+To execute unit tests, `composer install` and run:
 ```sh
-./vendor/bin/simple-phpunit
+phpunit --coverage-text
 ```

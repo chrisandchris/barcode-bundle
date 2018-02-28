@@ -14,18 +14,7 @@
     "qrcode",
     "qr code"
   ],
-  "license": "GNU-LGPLv3",
-  "authors": [
-    {
-      "name": "Dinesh Rabara",
-      "email": "dinesh.rabara@gmail.com"
-    },
-    {
-      "name": "SHANG Guokan",
-      "email": "shangguokan@hotmail.com",
-      "homepage": "https://github.com/shangguokan"
-    }
-  ],
+  "license": "Apache-2.0",
   "require": {
      "php": ">=5.5.9|^7.0",
      "symfony/framework-bundle": "^3.0|^4.0",

@@ -1,9 +1,11 @@
 {
   "name": "chrisandchris/barcode-bundle",
   "type": "symfony-bundle",
-  "description": "Symfony2 Barcode Generator Bundle with Twig function extension",
+  "description": "Symfony 3 & 4 Barcode Generator Bundle with Twig function extension",
   "keywords": [
-    "Symfony2",
+    "Symfony3",
+    "Symfony4",
+    "Flex",
     "barcode",
     "Symfony",
     "Bundle",
@@ -26,12 +28,12 @@
   ],
   "require": {
      "php": ">=5.5.9|^7.0",
-     "symfony/framework-bundle": "~2.3|^3.0",
-     "symfony/twig-bundle": "~2.3|^3.0",
-     "symfony/options-resolver": "~2.1|^3.0"
+     "symfony/framework-bundle": "^3.0|^4.0",
+     "symfony/twig-bundle": "^3.0|^4.0",
+     "symfony/options-resolver": "^3.0|^4.0"
   },
   "require-dev": {
-    "phpunit/phpunit": "4.5.0"
+    "symfony/phpunit-bridge": "^3.0|^4.0"
   },
   "autoload": {
     "psr-4": { "SGK\\BarcodeBundle\\": "" }

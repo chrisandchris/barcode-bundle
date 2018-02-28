@@ -1,10 +1,6 @@
 # SGKBarcodeBundle
 
-[![Build Status](https://travis-ci.org/shangguokan/SGKBarcodeBundle.svg)](https://travis-ci.org/shangguokan/SGKBarcodeBundle)
-[![Latest Stable Version](https://poser.pugx.org/sgk/barcode-bundle/v/stable)](https://packagist.org/packages/sgk/barcode-bundle) [![Total Downloads](https://poser.pugx.org/sgk/barcode-bundle/downloads)](https://packagist.org/packages/sgk/barcode-bundle) [![Latest Unstable Version](https://poser.pugx.org/sgk/barcode-bundle/v/unstable)](https://packagist.org/packages/sgk/barcode-bundle) [![License](https://poser.pugx.org/sgk/barcode-bundle/license)](https://packagist.org/packages/sgk/barcode-bundle)
-
-SGKBarcodeBundle is a Symfony2 / Symfony3 Barcode Generator Bundle.
-This README is also available in French ([Français](Resources/doc/README_fr.md)) and Chinese ([中文](Resources/doc/README_zh-CN.md)).
+SGKBarcodeBundle is a Symfony3 / 4 Barcode Generator Bundle.
 
 Features:
 
@@ -19,22 +15,14 @@ Features:
 
 Add SGKBarcodeBundle by running the command:
 ```sh
-// Symfony version >= 3.0
-$ php composer.phar require sgk/barcode-bundle:~3.0
-
-// Symfony version >= 2.7 and < 3.0, use ~2.0
-// Symfony version < 2.7, use ~1.0
+$ php composer.phar require sgk/barcode-bundle:v2.0.0
 ```
 
 Or, add SGKBarcodeBundle to your ``composer.json``, then execute ``php composer.phar update``
 ```json
-// Symfony version >= 3.0
 "require": {
-        "sgk/barcode-bundle": "~3.0"
+        "sgk/barcode-bundle": "v2.0.0"
     }
-
-// Symfony version >= 2.7 and < 3.0, use ~2.0
-// Symfony version < 2.7, use ~1.0
 ```
 
 Composer will install the bundle to your project's vendor/sgk directory.
@@ -53,6 +41,8 @@ public function registerBundles()
 }
 ```
 
+If you are using Symfony 4 with Flex the line should have automatically been added to `config/bundles.php`
+
 ## Generate options
 
 To generate one barcode, you have 5 options can be configured.
@@ -70,7 +60,9 @@ To generate one barcode, you have 5 options can be configured.
 > Default color for html, svg is black, for png is array(0, 0, 0)
 
 ## Usage by service
-  
+
+> This is deprecated in version 3.4 and will break in Symfony 4. See 'usage without service' instead.
+
 The bundle registers one service: ``sgk_barcode.generator`` which will allows you to generate barcode:
 
 * outpout html
@@ -246,7 +238,7 @@ If there is some problem of requirements, make sure you have install these two e
 
 ## Tests
 
-To execute unit tests:
+To execute unit tests, `composer install` and run:
 ```sh
-$ phpunit --coverage-text
+phpunit --coverage-text
 ```

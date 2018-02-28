@@ -2,7 +2,7 @@
 
 namespace SGK\BarcodeBundle\Tests\Type;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use SGK\BarcodeBundle\Type\Type;
 
 /**
@@ -10,7 +10,7 @@ use SGK\BarcodeBundle\Type\Type;
  *
  * @package SGK\BarcodeBundle\Tests\Type
  */
-class TypeTest extends PHPUnit_Framework_TestCase
+class TypeTest extends TestCase
 {
     /**
      * testConfigureOptions

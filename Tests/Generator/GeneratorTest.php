@@ -2,7 +2,7 @@
 
 namespace SGK\BarcodeBundle\Tests\Generator;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use SGK\BarcodeBundle\Generator\Generator;
 
 /**
@@ -10,7 +10,7 @@ use SGK\BarcodeBundle\Generator\Generator;
  *
  * @package SGK\BarcodeBundle\Tests\Generator
  */
-class GeneratorTest extends PHPUnit_Framework_TestCase
+class GeneratorTest extends TestCase
 {
     /**
      * @return array
